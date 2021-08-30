@@ -1,0 +1,28 @@
+{
+	"": {
+		"prefix": "SlidingWindowFixedK",
+		"body": [
+		  "    int i=0,j=0,sum=0,mx=INT_MIN,mn=INT_MAX;",
+		  "",
+		  "    while(j<n)",
+		  "    { ",
+		  "        sum+=a[j];",
+		  "",
+		  "        if(j-i+1<k)",
+		  "        {",
+		  "            j++;",
+		  "        }",
+		  "        else if(j-i+1==k)",
+		  "        {",
+		  "            mx=max(mx,sum);",
+		  "            mn=min(mn,sum);",
+		  "            sum-=a[i];",
+		  "            i++;",
+		  "            j++;",
+		  "        }",
+		  "",
+		  "    }"
+		],
+		"description": ""
+	  }
+}

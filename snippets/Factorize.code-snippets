@@ -1,0 +1,25 @@
+{
+	"": {
+		"prefix": "Factorize",
+		"body": [
+		  "map<ll,ll> PF;",
+		  "void factorize(ll n)",
+		  "{",
+		  "	total = 1;",
+		  "	for(ll i=2;i*i<=n;i++)",
+		  "	if(n % i == 0)",
+		  "	{",
+		  "		int cnt = 0;",
+		  "		while(n % i == 0)",
+		  "		cnt++ , n /= i;",
+		  "		PF[i] = cnt;",
+		  "		total *= (cnt + 1);",
+		  "	}",
+		  "	",
+		  "	if(n > 1) PF[n] = 1 , total *= 2;",
+		  "}",
+		  ""
+		],
+		"description": ""
+	  }
+}

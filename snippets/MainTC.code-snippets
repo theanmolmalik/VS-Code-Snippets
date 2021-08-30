@@ -1,0 +1,22 @@
+{
+	"": {
+		"prefix": "MainTC",
+		"body": [
+		  "int main()",
+		  "{",
+		  "    speedrun",
+		  "",
+		  "    int t;",
+		  "    cin>>t;",
+		  "",
+		  "    while(t--)",
+		  "    {",
+		  "        ",
+		  "    }",
+		  "",
+		  "    return 0;",
+		  "}"
+		],
+		"description": ""
+	  }
+}

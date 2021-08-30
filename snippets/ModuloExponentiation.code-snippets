@@ -1,0 +1,29 @@
+{
+	"": {
+		"prefix": "ModuloExponentiation",
+		"body": [
+		  "int power(int a,int n,int m)",
+		  "{",
+		  "    int res=1;",
+		  "",
+		  "    while(n)",
+		  "    {",
+		  "        if(n%2)",
+		  "        {",
+		  "        ",
+		  "            res=(res*a)%m;",
+		  "            n--;",
+		  "        }",
+		  "        else",
+		  "        {",
+		  "            a=(a*a)%m;",
+		  "            n/=2;",
+		  "        }",
+		  "    }",
+		  "",
+		  "    return res;",
+		  "}"
+		],
+		"description": ""
+	  }
+}
