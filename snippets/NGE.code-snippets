@@ -1,0 +1,29 @@
+{
+	"": {
+		"prefix": "NGE",
+		"body": [
+		  "vector <ll> NGE(vector <ll> v)",
+		  "{",
+		  "    vector <ll> nge(v.size());",
+		  "    stack<ll> st;",
+		  "",
+		  "    for(ll i=0;i<v.size();i++)",
+		  "    {",
+		  "        while(!st.empty() &&  v[i]>v[st.top()])",
+		  "        {",
+		  "            nge[st.top()]=i;",
+		  "            st.pop();",
+		  "        }",
+		  "        st.push(i);",
+		  "    }",
+		  "    while(!st.empty())",
+		  "    {",
+		  "        nge[st.top()]=-1;",
+		  "        st.pop();",
+		  "    }",
+		  "    return nge;",
+		  "}"
+		],
+		"description": ""
+	  }
+}
